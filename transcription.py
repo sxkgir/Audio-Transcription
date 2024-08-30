@@ -9,7 +9,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
 speech_client = speech.SpeechClient()
 
 # URI of the media file stored in Google Cloud Storage
-media_uri = 'gs://speech-to-text-audio-filess/the-dilemma.wav'
+media_uri = 'sample-0.mp3'
 audio = speech.RecognitionAudio(uri=media_uri)
 
 # Configure the request for regular recognition
